@@ -902,7 +902,6 @@ F 3 "" H 4300 1525 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 Connection ~ 4025 1525
-Connection ~ 1275 2275
 Wire Wire Line
 	1275 1225 1725 1225
 Wire Wire Line
