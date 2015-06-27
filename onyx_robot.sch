@@ -412,15 +412,15 @@ Text GLabel 5125 4350 3    60   Input ~ 0
 $Comp
 L +12V #PWR013
 U 1 1 55857384
-P 2275 3850
-F 0 "#PWR013" H 2275 3700 50  0001 C CNN
-F 1 "+12V" H 2275 3990 50  0000 C CNN
-F 2 "" H 2275 3850 60  0000 C CNN
-F 3 "" H 2275 3850 60  0000 C CNN
-	1    2275 3850
+P 2275 3650
+F 0 "#PWR013" H 2275 3500 50  0001 C CNN
+F 1 "+12V" H 2275 3790 50  0000 C CNN
+F 2 "" H 2275 3650 60  0000 C CNN
+F 3 "" H 2275 3650 60  0000 C CNN
+	1    2275 3650
 	1    0    0    -1  
 $EndComp
-Text GLabel 1650 3650 2    60   Input ~ 0
+Text GLabel 1650 3450 2    60   Input ~ 0
 12V_OUT
 Text GLabel 1650 5100 2    60   Input ~ 0
 EXIT
@@ -718,7 +718,7 @@ F 3 "" H 1250 4950 60  0000 C CNN
 $EndComp
 Text GLabel 1650 4700 2    60   Input ~ 0
 TAMPER
-Text GLabel 1650 3450 2    60   Input ~ 0
+Text GLabel 1650 3850 2    60   Input ~ 0
 SNIB
 $Comp
 L Q_NMOS_GDS Q2
@@ -949,7 +949,7 @@ Wire Wire Line
 Wire Wire Line
 	3200 6475 3150 6475
 Wire Wire Line
-	1450 3850 2275 3850
+	1450 3850 1650 3850
 $Comp
 L GND #PWR030
 U 1 1 558E55EE
@@ -986,7 +986,7 @@ Connection ~ 1550 5000
 Wire Wire Line
 	1450 3450 1650 3450
 Wire Wire Line
-	1450 3650 1650 3650
+	1450 3650 2275 3650
 Wire Wire Line
 	1450 3550 1550 3550
 Wire Wire Line
