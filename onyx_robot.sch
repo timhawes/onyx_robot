@@ -288,9 +288,9 @@ Text GLabel 9825 3975 2    60   Input ~ 0
 TX
 Text GLabel 9600 4075 2    60   Input ~ 0
 RX
-Text GLabel 3350 6475 2    60   Input ~ 0
-TX
 Text GLabel 3525 6375 2    60   Input ~ 0
+TX
+Text GLabel 3350 6475 2    60   Input ~ 0
 RX
 $Comp
 L +3.3V #PWR09
