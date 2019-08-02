@@ -1,19 +1,14 @@
+G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,(5.1.2-1)-1*
+G04 #@! TF.CreationDate,2019-08-03T00:50:44+01:00*
+G04 #@! TF.ProjectId,onyx_robot,6f6e7978-5f72-46f6-926f-742e6b696361,rev?*
+G04 #@! TF.SameCoordinates,Original*
 G04 #@! TF.FileFunction,Paste,Bot*
+G04 #@! TF.FilePolarity,Positive*
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 0.201506192325+5795~23~ubuntu14.04.1-product) date Sun 30 Aug 2015 22:32:50 BST*
+G04 Created by KiCad (PCBNEW (5.1.2-1)-1) date 2019-08-03 00:50:44*
 %MOMM*%
-G01*
+%LPD*%
 G04 APERTURE LIST*
-%ADD10C,0.100000*%
-%ADD11R,0.700000X0.600000*%
 G04 APERTURE END LIST*
-D10*
-D11*
-X51981100Y-86002900D03*
-X51981100Y-87402900D03*
-X51981100Y-75842900D03*
-X51981100Y-77242900D03*
-X51981100Y-65695600D03*
-X51981100Y-67095600D03*
 M02*
