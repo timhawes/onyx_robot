@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:onyx_robot-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L onyx_robot-rescue:ESP-12E U3
+L onyx_robot-rescue:ESP-12E-onyx_robot-rescue U3
 U 1 1 55847B66
 P 8600 4275
 F 0 "U3" H 8600 4175 50  0000 C CNN
@@ -70,7 +69,7 @@ F 3 "" H 3575 5100 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L onyx_robot-rescue:CONN_01X06 P4
+L onyx_robot-rescue:CONN_01X06-onyx_robot-rescue P4
 U 1 1 55847D6C
 P 4100 6525
 F 0 "P4" H 4100 6875 50  0000 C CNN
@@ -81,7 +80,7 @@ F 3 "" H 4100 6525 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L onyx_robot-rescue:CONN_01X04 P1
+L onyx_robot-rescue:CONN_01X04-onyx_robot-rescue P1
 U 1 1 55847E1B
 P 1250 3700
 F 0 "P1" H 1250 3950 50  0000 C CNN
@@ -92,7 +91,7 @@ F 3 "" H 1250 3700 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L onyx_robot-rescue:CONN_01X08 P3
+L onyx_robot-rescue:CONN_01X08-onyx_robot-rescue P3
 U 1 1 55847F14
 P 1250 6525
 F 0 "P3" H 1250 6975 50  0000 C CNN
@@ -149,7 +148,7 @@ $EndComp
 Text GLabel 6375 1925 2    60   Input ~ 0
 ADC
 $Comp
-L onyx_robot-rescue:SW_PUSH SW1
+L onyx_robot-rescue:SW_PUSH-onyx_robot-rescue SW1
 U 1 1 55848A10
 P 10100 2150
 F 0 "SW1" H 10250 2260 50  0000 C CNN
@@ -199,7 +198,7 @@ L power:+3.3V #PWR07
 U 1 1 55849165
 P 8000 1350
 F 0 "#PWR07" H 8000 1200 50  0001 C CNN
-F 1 "+3.3V" H 8000 1490 50  0000 C CNN
+F 1 "+3.3V" H 8000 1500 50  0000 C CNN
 F 2 "" H 8000 1350 60  0000 C CNN
 F 3 "" H 8000 1350 60  0000 C CNN
 	1    8000 1350
@@ -275,7 +274,7 @@ U 1 1 55854FA0
 P 4400 4275
 F 0 "U2" H 4400 4525 60  0000 C CNN
 F 1 "RELAY_SPDT" H 4400 4025 60  0000 C CNN
-F 2 "Relay_THT:Relay_SPDT_Omron-G5LE-1" H 3650 4475 60  0001 C CNN
+F 2 "timhawes:JS_RELAY" H 3650 4475 60  0001 C CNN
 F 3 "" H 3650 4475 60  0000 C CNN
 	1    4400 4275
 	1    0    0    -1  
@@ -326,7 +325,7 @@ F 3 "" H 3925 4275 60  0000 C CNN
 $EndComp
 Text GLabel 3475 4875 0    60   Input ~ 0
 RELAY
-Text GLabel 4950 4425 2    60   Input ~ 0
+Text GLabel 5100 4725 3    60   Input ~ 0
 12V_OUT
 Text GLabel 1775 5100 2    60   Input ~ 0
 EXIT
@@ -414,7 +413,7 @@ SNIB
 Text GLabel 9600 4475 2    60   Input ~ 0
 PN532_RESET
 $Comp
-L onyx_robot-rescue:CONN_01X06 P2
+L onyx_robot-rescue:CONN_01X06-onyx_robot-rescue P2
 U 1 1 5585E73E
 P 1250 4950
 F 0 "P2" H 1250 5300 50  0000 C CNN
@@ -437,7 +436,7 @@ F 3 "" H 8250 2100 60  0000 C CNN
 	1    8250 2100
 	1    0    0    -1  
 $EndComp
-Text GLabel 8825 1800 2    60   Input ~ 0
+Text GLabel 8650 1825 2    60   Input ~ 0
 PIEZO
 $Comp
 L power:GND #PWR017
@@ -457,12 +456,12 @@ Measurement of 12V rail \nto detect power failures.
 Text Notes 7550 1075 0    60   ~ 0
 GPIO0 LOW = Bootloader\nGPIO0 HIGH = Runtime
 $Comp
-L onyx_robot-rescue:JUMPER JP2
+L onyx_robot-rescue:JUMPER-onyx_robot-rescue JP2
 U 1 1 558E08A0
 P 8000 2550
 F 0 "JP2" H 8000 2700 50  0000 C CNN
 F 1 "BOOT" H 8000 2470 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 8000 2550 60  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8000 2550 60  0001 C CNN
 F 3 "" H 8000 2550 60  0000 C CNN
 	1    8000 2550
 	0    1    1    0   
@@ -612,7 +611,7 @@ Wire Wire Line
 Wire Wire Line
 	4875 4275 4700 4275
 Wire Wire Line
-	4700 4425 4950 4425
+	4700 4425 4850 4425
 Wire Wire Line
 	1400 1375 1575 1375
 Wire Wire Line
@@ -670,8 +669,6 @@ Wire Wire Line
 	1450 6575 1725 6575
 Wire Wire Line
 	1450 3850 2025 3850
-Wire Wire Line
-	8350 1800 8450 1800
 Wire Wire Line
 	1450 3550 1500 3550
 Wire Wire Line
@@ -756,22 +753,20 @@ Wire Wire Line
 Wire Wire Line
 	1575 2500 1575 2625
 Wire Wire Line
-	8000 1350 8000 1650
-Wire Wire Line
-	8350 1800 8350 1900
+	8350 1725 8350 1825
 $Comp
-L Device:R R1
+L Device:R R14
 U 1 1 5D48E402
-P 8600 1800
-F 0 "R1" V 8500 1800 50  0000 C CNN
-F 1 "1K" V 8600 1800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 8530 1800 50  0001 C CNN
-F 3 "~" H 8600 1800 50  0001 C CNN
-	1    8600 1800
-	0    1    1    0   
+P 8350 1575
+F 0 "R14" V 8250 1575 50  0000 C CNN
+F 1 "10K" V 8350 1575 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8280 1575 50  0001 C CNN
+F 3 "~" H 8350 1575 50  0001 C CNN
+	1    8350 1575
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8750 1800 8825 1800
+	8350 1825 8650 1825
 $Comp
 L Regulator_Switching:R-78E5.0-1.0 U1
 U 1 1 5D4D2F18
@@ -921,7 +916,6 @@ Wire Wire Line
 Connection ~ 2775 1475
 Wire Wire Line
 	2775 1475 2775 1750
-NoConn ~ 4700 4125
 Wire Wire Line
 	6100 6650 6100 6750
 Wire Wire Line
@@ -940,4 +934,41 @@ Wire Wire Line
 	1450 4900 1775 4900
 Wire Wire Line
 	1450 4700 1775 4700
+Wire Wire Line
+	8350 1350 8350 1425
+Connection ~ 8350 1825
+Wire Wire Line
+	8350 1825 8350 1900
+Wire Wire Line
+	8000 1350 8000 1650
+$Comp
+L power:+5V #PWR0105
+U 1 1 5F0F5490
+P 8350 1350
+F 0 "#PWR0105" H 8350 1200 50  0001 C CNN
+F 1 "+5V" H 8350 1500 50  0000 C CNN
+F 2 "" H 8350 1350 50  0001 C CNN
+F 3 "" H 8350 1350 50  0001 C CNN
+	1    8350 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Dual JP1
+U 1 1 5F109367
+P 5100 4425
+F 0 "JP1" H 5225 4325 50  0000 C CNN
+F 1 "NO/NC" H 5100 4573 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5100 4425 50  0001 C CNN
+F 3 "~" H 5100 4425 50  0001 C CNN
+	1    5100 4425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4525 5100 4725
+Wire Wire Line
+	4700 4125 5450 4125
+Wire Wire Line
+	5450 4125 5450 4425
+Wire Wire Line
+	5450 4425 5350 4425
 $EndSCHEMATC
